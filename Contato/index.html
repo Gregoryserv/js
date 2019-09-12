@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Formulário de contato</title>
+    <style>
+      label {
+        display: flex;
+      }
+    </style>
+</head>
+<body>
+    <h1>Formulario de contato</h1>
+
+    <form>
+        <div class="row">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome">
+        </div>
+        <div class="row">
+                <label for="email">Email</label>
+                <input type="text" id="email">
+            </div>
+            <div class="row">
+                    <label for="descricao">Descrição</label>
+                    <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+                </div>
+                <button type="button" onclick="enviarEmail()">Enviar</button>
+    </form>
+    <script src="formulario.js"></script>
+</body>
+</html>
